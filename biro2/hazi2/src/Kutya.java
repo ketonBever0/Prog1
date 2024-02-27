@@ -25,25 +25,38 @@ public class Kutya {
         this.kedvencEtelek = kedvencEtelek;
     }
 
-    public Kutya kutyaEtetes(Kutya elso, Kutya masodik, String etel) {
+    public static Kutya kutyaEtetes(Kutya elso, Kutya masodik, String etel) {
 
+        if (elso.szereti(etel) && masodik.szereti(etel)) {
+            double elsoKE = Math.sqrt(((double) elso.ehseg / 2.0) * ((double) elso.jokedv / 3.0));
+            double masodikKE = Math.sqrt(((double) masodik.ehseg / 2.0) * ((double) masodik.jokedv / 3.0));
 
+            if (elsoKE == masodikKE) {
+                elso.eszik(etel);
+                return elso;
+            } else if (masodikKE > elsoKE) {
+                masodik.eszik(etel);
+                return masodik;
+            } else if (elsoKE > masodikKE) {
+                elso.eszik(etel);
+                return elso;
+            }
+
+        } else if (elso.szereti(etel)) {
+            return elso;
+        } else if (masodik.szereti(etel)) {
+            return masodik;
+        }
 
         return null;
     }
 
     public boolean szereti(String etel) {
 
-        String[] kisbetus = new String[this.kedvencEtelek.length];
-
-        int j = 0;
-        for (String i : this.kedvencEtelek) {
-            kisbetus[j] = i.toLowerCase();
-            j++;
-        }
+//        String[] kisbetus = new String[this.kedvencEtelek.length];
 
         for (String i : this.kedvencEtelek) {
-            if (etel.equals(i)) return true;
+            if (i.equalsIgnoreCase(etel)) return true;
         }
 
         return false;
@@ -57,14 +70,15 @@ public class Kutya {
             return;
         }
 
-         if (ehseg != 0) ehseg--;
+        if (ehseg != 0) ehseg--;
 
-         if (ehseg == 0) farokCsovalas();
+        if (ehseg == 0) farokCsovalas();
 
     }
 
     public Kutya farokCsovalas() {
         this.jokedv++;
+//        System.out.println("jokedv");
         return this;
     }
 
@@ -75,18 +89,16 @@ public class Kutya {
 
     public boolean odajon(String nev) {
 
-        int thisLen = this.nev.length();
-        int nevLen = nev.length();
 
-        if (thisLen == nevLen) {
+        if (this.nev.length() == nev.length()) {
             int kulombsegek = 0;
             for (int i = 0; i < nev.length(); i++) {
-                if (!this.nev.substring(i, i + 1).equals(nev.substring(i, i + 1))){
-                        kulombsegek++;
-                        if (kulombsegek == 2) return false;
+                if (!this.nev.toLowerCase().substring(i, i + 1).equals(nev.toLowerCase().substring(i, i + 1))) {
+                    kulombsegek++;
+                    if (kulombsegek == 3) return false;
                 }
-                return true;
             }
+            return true;
         }
 
         return false;
