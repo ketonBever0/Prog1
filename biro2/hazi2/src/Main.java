@@ -21,9 +21,9 @@ public class Main {
         System.out.println("K1: " + k1.ehseg + " " + k1.jokedv);
         System.out.println("K2: " + k2.ehseg + " " + k2.jokedv);
 
-        Kutya melikEszik = Kutya.kutyaEtetes(k2, k1, "lazac");
+        Kutya melyikEszik = Kutya.kutyaEtetes(k2, k1, "lazac");
 
-        System.out.println(melikEszik == null ? "egyik se" : melikEszik.nev);
+        System.out.println(melyikEszik == null ? "egyik se" : melyikEszik.nev);
 
 
     }

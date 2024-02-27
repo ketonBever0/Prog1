@@ -1,4 +1,4 @@
-import java.util.Arrays;
+
 
 public class Kutya {
 
@@ -8,12 +8,6 @@ public class Kutya {
     long jokedv;
 
 
-    /*public Kutya(String nev, String[] kedvencEtelek, short ehseg, long jokedv) {
-        this.nev = nev;
-        this.kedvencEtelek = kedvencEtelek;
-        this.ehseg = ehseg;
-        this.jokedv = jokedv;
-    }*/
 
     public Kutya(String nev) {
         this.nev = nev;
@@ -31,16 +25,7 @@ public class Kutya {
             double elsoKE = Math.sqrt(((double) elso.ehseg / 2.0) * ((double) elso.jokedv / 3.0));
             double masodikKE = Math.sqrt(((double) masodik.ehseg / 2.0) * ((double) masodik.jokedv / 3.0));
 
-            if (elsoKE == masodikKE) {
-                elso.eszik(etel);
-                return elso;
-            } else if (masodikKE > elsoKE) {
-                masodik.eszik(etel);
-                return masodik;
-            } else if (elsoKE > masodikKE) {
-                elso.eszik(etel);
-                return elso;
-            }
+            return elsoKE < masodikKE ? masodik : elso;
 
         } else if (elso.szereti(etel)) {
             return elso;
