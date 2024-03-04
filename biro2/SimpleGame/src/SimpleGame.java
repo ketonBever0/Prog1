@@ -1,3 +1,7 @@
+import java.sql.Time;
+import java.util.Scanner;
+import java.util.concurrent.TimeUnit;
+
 /**
  * Ebben a feladatban egy egyszerű kis játékot kell implementálni. A játékban két lehetőség van, vagy időt kell átkonvertálni óra:perc:másodperc
  * formátumra, vagy össze kell adni egy szám számjegyeinek az összegét.
@@ -27,21 +31,13 @@ public class SimpleGame {
     public String convertTime(int seconds){
         // TODO: ide jön a megvalósításod
 
-        int hours, minutes, endSeconds, endMinutes;
+        if (seconds < 0) return "-1:-1:-1";
 
-        endSeconds = (seconds % 60);
+        long hours = TimeUnit.SECONDS.toHours(seconds);
+        long minutes = TimeUnit.SECONDS.toMinutes(seconds) - (TimeUnit.SECONDS.toHours(seconds) * 60);
+        long endSeconds = TimeUnit.SECONDS.toSeconds(seconds) - (TimeUnit.SECONDS.toMinutes(seconds) * 60);
 
-        seconds -= endSeconds;
-
-        minutes = endSeconds / 60;
-
-        System.out.println(seconds);
-
-        endMinutes = (minutes % 60);
-
-        hours = endMinutes / 60;
-
-        return String.format("&hours:&minutes:&seconds", hours, minutes, endSeconds);
+        return String.format("%d:%d:%d", hours, minutes, endSeconds);
     }
 
     /**
@@ -56,21 +52,51 @@ public class SimpleGame {
      */
     public int digitsSum(int input){
         // TODO: ide jön a megvalósításod
-        return 0;
+
+        String stringInput = Integer.toString(input);
+
+        int sum = 0;
+        for (int i = 0; i < stringInput.length(); i++) {
+            sum += Integer.parseInt(stringInput.substring(i, i + 1));
+        }
+
+
+        return sum;
     }
 
     public static void main(String[] args) {
         // Hozz létre egy példányt a SimpleGame osztályból.
         // TODO: ide jön a megvalósításod
 
-        System.out.println(convertTime(5000));
+        SimpleGame sg = new SimpleGame();
 
+//        System.out.println(sg.convertTime(120));
+//        System.out.println(sg.digitsSum(234));
 
 
         // Kérdezd meg a felhasználót, melyik játékkal akar játszani.
         // Majd kérd be az adott feladatnak megfelelő inputot.
 
+        System.out.println("Melyik játékkal szeretne játszani? 1/2");
+        Scanner sc = new Scanner(System.in);
+
+        int choice = sc.nextInt();
+
         // Ha a felhasználó az 1-et választotta, akkor kérj tőle egy egész értéket, amire meghívod a SimpleGame objektumon keresztül a convertTime metódust.
+
+        if (choice == 1) {
+            System.out.println("Írjon egy egész számot:");
+            int input = sc.nextInt();
+            System.out.println(sg.convertTime(input));
+        }
+
         // Ha a felhasználó a 2-öt választotta, akkor kérj tőle egy egész értéket, amire meghívod a SimpleGame objektumon keresztül a digitsSum metódust.
+
+        if (choice == 2) {
+            System.out.println("Írjon egy egész számot:");
+            int input = sc.nextInt();
+            System.out.println(sg.digitsSum(input));
+        }
+
     }
 }
