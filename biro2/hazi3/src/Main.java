@@ -3,7 +3,10 @@ import java.util.Arrays;
 public class Main {
     public static void main(String[] args) {
 
-        Nyomozo ny1 = new Nyomozo(new String[]{"Károly", "Bajnok", "Károly", "Petrus", "Petrus", "Károly", "Laca"}, new int[]{2, 5, 6, 3, 9, 12, 52});
+        Nyomozo ny1 = new Nyomozo(
+                new String[]{"Károly", "Bajnok", "Károly", "Petrus", "Petrus", "Columbo", "Károly", "Laca", "Laci", "Bajnok", "Lali", "Columbo"},
+                new int[]{2, 5, 6, 3, 9, 12, 52, 17, 74}
+        );
 
 //        System.out.println(Arrays.toString(ny1.nyomok));
 //        System.out.println(ny1.nyomotFelhasznal(2));
@@ -23,8 +26,12 @@ public class Main {
 //        ny1.nyomokatRendez();
 //        System.out.println(Arrays.toString(ny1.nyomok));
 
-
+        System.out.println(Arrays.toString(ny1.nyomok));
         ny1.alibikEliminalasa();
+        System.out.println(Arrays.toString(ny1.nyomok));
+
+        System.out.println(ny1.bajbanVan());
+
 
 
     }

@@ -71,7 +71,7 @@ public class Nyomozo {
 
         if (!van) return false;
 
-        String forditvaGyanusitottak[] = new String[this.gyanusitottak.length];
+        String[] forditvaGyanusitottak = new String[this.gyanusitottak.length];
 
         for (int i = this.gyanusitottak.length - 1, j = 0; i >= 0 && j < forditvaGyanusitottak.length; i--, j++) {
             forditvaGyanusitottak[j] = this.gyanusitottak[i];
@@ -138,10 +138,11 @@ public class Nyomozo {
 
         if (this.nyomok.length < 3) return;
         int ujMeret = this.nyomok.length;
-        for (int i = 0, index = 1; i < this.nyomok.length; i++, index++) {
+        for (int i = 0; i < this.nyomok.length; i++) {
 
-            if (index % 3 == 0) {
+            if ((i + 1) % 3 == 0) {
                 ujMeret--;
+//                System.out.println(i + " " + nyomok[i]);
             }
 
 //            System.out.println(ujMeret);
@@ -149,13 +150,23 @@ public class Nyomozo {
         }
 
         int[] ujNyomok = new int[ujMeret];
-        for (int i = 0, j = 0, index = 1; i < ujMeret; i++, j++, index++) {
+        for (int i = 0, j = 0; j < ujMeret; i++) {
+            if ((i + 1) % 3 == 0) continue;
+
+            ujNyomok[j] = this.nyomok[i];
+            j++;
 
         }
+
+        this.nyomok = ujNyomok;
 
     }
 
     public boolean bajbanVan() {
+
+        if (felmentoBizonyitek(this.nev)) {
+            return true;
+        }
 
         return false;
     }
