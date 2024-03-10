@@ -134,7 +134,24 @@ public class Nyomozo {
 
     }
 
-    public void alibikElhamisitasa() {
+    public void alibikEliminalasa() {
+
+        if (this.nyomok.length < 3) return;
+        int ujMeret = this.nyomok.length;
+        for (int i = 0, index = 1; i < this.nyomok.length; i++, index++) {
+
+            if (index % 3 == 0) {
+                ujMeret--;
+            }
+
+//            System.out.println(ujMeret);
+
+        }
+
+        int[] ujNyomok = new int[ujMeret];
+        for (int i = 0, j = 0, index = 1; i < ujMeret; i++, j++, index++) {
+
+        }
 
     }
 
