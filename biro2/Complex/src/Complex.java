@@ -1,7 +1,9 @@
+import java.text.DecimalFormat;
+
 public class Complex {
 
-    public final double real;
-    public final double imag;
+    private final double real;
+    private final double imag;
 
 
     public Complex(double real, double imag) {
@@ -14,10 +16,11 @@ public class Complex {
     }
 
     public String toString() {
-        return imag == 0 ? Double.toString(real) : String.format("%.5g%s%.5gi",
-                Math.,
+        DecimalFormat decimalFormat = new DecimalFormat();
+        return imag == 0 ? Double.toString(real) : String.format("%s%s%si",
+                decimalFormat.format(real),
                 imag > 0 ? "+" : "",
-                imag);
+                decimalFormat.format(imag));
     }
 
     public double getReal() {
