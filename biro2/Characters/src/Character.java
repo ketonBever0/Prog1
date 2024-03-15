@@ -1,9 +1,9 @@
-public class Characters {
+public class Character {
 
     private int mana;
     private int stamina;
     private int health;
-    private String name;
+    private final String name;
 
 
     public int getMana() {
@@ -35,7 +35,7 @@ public class Characters {
     }
 
 
-    public Characters(int mana, int stamina, int health, String name) {
+    public Character(String name, int health, int mana, int stamina) {
         setMana(mana);
         setStamina(stamina);
         setHealth(health);
@@ -44,7 +44,6 @@ public class Characters {
 
 
     public String useSpell() {
-
         return "";
     }
 
