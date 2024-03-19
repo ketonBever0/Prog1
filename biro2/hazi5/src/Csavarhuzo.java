@@ -1,7 +1,7 @@
 public class Csavarhuzo {
 
     private int meret;
-    Csavarfej csavarfej;
+    protected Csavarfej csavarfej;
 
     public Csavarhuzo(int meret, Csavarfej fej) {
         this.meret = meret;
@@ -20,4 +20,12 @@ public class Csavarhuzo {
         return this.csavarfej;
     }
 
+    //    @Override
+    public String toString() {
+        return switch (this.csavarfej) {
+            case EGYHORNYU -> "hagyomanyos feju csavarhuzo";
+            case PHILLIPS -> "csillagfeju csavarhuzo";
+            case IMBUSZ -> "imbuszfeju csavarhuzo";
+        };
+    }
 }

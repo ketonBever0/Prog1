@@ -28,7 +28,7 @@ public class CserelhetoFejuCsavarhuzo extends Csavarhuzo {
 
     public boolean fejCsere(String melyikre) {
 
-        if (super.csavarfej.toString().equals(melyikre)) return false;
+        if (super.getCsavarfej().name().equalsIgnoreCase(melyikre)) return false;
 
         switch (melyikre) {
             case "egyhornyu" -> {
@@ -43,6 +43,9 @@ public class CserelhetoFejuCsavarhuzo extends Csavarhuzo {
                 if (!this.imbuszFej) return false;
                 super.csavarfej = Csavarfej.IMBUSZ;
             }
+            default -> {
+                return false;
+            }
         }
 
         return true;
@@ -50,7 +53,7 @@ public class CserelhetoFejuCsavarhuzo extends Csavarhuzo {
     }
 
     public int getMeret() {
-        return super.getMeret();
+        return super.getMeret() - this.fejMeret;
     }
 
 }

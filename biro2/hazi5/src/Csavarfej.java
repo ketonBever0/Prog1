@@ -4,21 +4,21 @@ public enum Csavarfej {
     PHILLIPS,
     IMBUSZ;
 
-    @Override
-    public String toString() {
-        switch (this) {
-            case EGYHORNYU -> {
-                return "egyhornyu";
-            }
-            case PHILLIPS -> {
-                return "phillips";
-            }
-            case IMBUSZ -> {
-                return "imbusz";
-            }
-            default -> {
-                return "";
-            }
-        }
-    }
+//    @Override
+//    public String toString() {
+//        switch (this) {
+//            case EGYHORNYU -> {
+//                return "hagyomanyos feju csavarhuzo";
+//            }
+//            case PHILLIPS -> {
+//                return "csillagfeju csavarhuzo";
+//            }
+//            case IMBUSZ -> {
+//                return "imbuszfeju csavarhuzo";
+//            }
+//            default -> {
+//                return "";
+//            }
+//        }
+//    }
 }
