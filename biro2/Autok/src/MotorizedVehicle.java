@@ -18,14 +18,23 @@ public class MotorizedVehicle {
 
     public boolean go(float km) {
 
+        float cons = km * this.averageConsuption();
+        if (this.fuelLevel * this.averageConsuption() < km * this.averageConsuption()) {
+            return false;
+        } else {
+            this.setFuelLevel(cons);
+            return true;
+        }
     }
 
     public void refuel(float l) {
-
+        this.fuelLevel += l;
     }
 
     public int range() {
-
+        return (int) Math.floor(
+                this.fuelLevel / this.averageConsuption()
+        );
     }
 
     public float getFuelLevel() {
@@ -44,17 +53,16 @@ public class MotorizedVehicle {
         return baseWeight;
     }
 
+    public int getWeight() {
+        return (int) (this.getBaseWeight() + (this.fuelLevel * 0.77));
+    }
+
     private void setFuelLevel(float fuelLevel) {
         this.fuelLevel = Math.min(Math.max(fuelLevel, 0), 100);
     }
 
     @Override
     public String toString() {
-        return "MotorizedVehicle{" +
-                "fuelLevel=" + fuelLevel +
-                ", maxFuelCapacity=" + maxFuelCapacity +
-                ", tireCount=" + tireCount +
-                ", baseWeight=" + baseWeight +
-                '}';
+        return String.format("Alapsuly: %d Kg, Kerekek szama: %d, Uzemanyag tartaj: %f/50", this.baseWeight, this.tireCount, this.fuelLevel);
     }
 }
