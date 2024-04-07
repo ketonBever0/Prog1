@@ -32,9 +32,7 @@ public class MotorizedVehicle {
     }
 
     public int range() {
-        return (int) Math.floor(
-                this.fuelLevel / this.averageConsuption()
-        );
+        return (int) Math.floor(this.fuelLevel / this.averageConsuption());
     }
 
     public float getFuelLevel() {
@@ -63,6 +61,6 @@ public class MotorizedVehicle {
 
     @Override
     public String toString() {
-        return String.format("Alapsuly: %d Kg, Kerekek szama: %d, Uzemanyag tartaj: %f/50", this.baseWeight, this.tireCount, this.fuelLevel);
+        return String.format("Alapsuly: %d Kg, Kerekek szama: %d, Uzemanyag tartaj: %.1f/50", this.baseWeight, this.tireCount, this.fuelLevel);
     }
 }
