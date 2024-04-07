@@ -5,31 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bf2d4734-b987-417c-8295-eb703a05e2bf" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../../biro1/ZH2/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../biro1/ZH2/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../biro1/ZH2/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../biro1/ZH2/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../biro1/ZH2/ZH2.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../biro1/ZH2/feladat.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../biro1/ZH2/src/Birka.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../biro1/ZH2/src/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../biro1/ZH2/src/Pasztor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../biro1/ZH2/src/PasztorKutya.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../hazi6/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../hazi6/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../hazi6/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../hazi6/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../hazi6/hazi6.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../hazi6/src/File.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../hazi6/src/FileSystemEntry.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../hazi6/src/Folder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../hazi6/src/Manager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../hazi6/src/Namer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../hazi6/src/RandomNamer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../hazi6/src/SequentialNamer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../hazi6/src/bead.zip" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MotorizedVehicle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MotorizedVehicle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/RaceCar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RaceCar.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Formula1Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Formula1Car.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hazi6/src/bead.zip" beforeDir="false" afterPath="$PROJECT_DIR$/../hazi6/src/bead.zip" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,6 +36,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.Main.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",

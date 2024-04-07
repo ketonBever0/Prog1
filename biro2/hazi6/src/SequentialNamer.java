@@ -5,6 +5,7 @@ public class SequentialNamer implements Namer {
 
     @Override
     public void rename(FileSystemEntry file) {
-        file.setName(file.getName() + "_" + 1);
+        file.setName(file.getName() + "_" + this.index);
+        this.index++;
     }
 }

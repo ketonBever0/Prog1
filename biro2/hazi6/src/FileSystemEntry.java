@@ -9,12 +9,10 @@ public abstract class FileSystemEntry {
         this.setName(name);
     }
 
-    public long size() {
-        return 0;
-    }
+    public abstract long size();
 
     public String fullPath() {
-        return String.format("%s%s", this.parent == null ? "" : this.parent + "/", this.name);
+        return String.format("%s%s", this.parent == null ? "" : this.parent.fullPath() + "/", this.name);
     }
 
     public void setName(String name) {

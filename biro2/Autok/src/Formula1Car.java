@@ -5,7 +5,7 @@ public class Formula1Car extends RaceCar {
 
 
     public Formula1Car(int topSpeed, String team, int pilotSkillLevel) {
-
+        super();
         this.team = team;
         this.pilotSkillLevel = pilotSkillLevel;
     }

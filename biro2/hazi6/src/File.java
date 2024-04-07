@@ -7,4 +7,9 @@ public class File extends FileSystemEntry {
         super(parent, name);
         this.size = size;
     }
+
+    @Override
+    public long size() {
+        return this.size;
+    }
 }
