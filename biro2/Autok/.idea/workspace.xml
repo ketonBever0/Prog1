@@ -4,13 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bf2d4734-b987-417c-8295-eb703a05e2bf" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Formula1Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Formula1Car.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MotorizedVehicle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MotorizedVehicle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/RaceCar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RaceCar.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/RaceTrack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RaceTrack.java" afterDir="false" />
-    </list>
+    <list default="true" id="bf2d4734-b987-417c-8295-eb703a05e2bf" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -26,18 +20,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "ketonBever0"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;ketonBever0&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/ketonBever0/Prog1.git",
-    "accountId": "b6e5e089-ba2b-4051-82b1-e1979356c4db"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/ketonBever0/Prog1.git&quot;,
+    &quot;accountId&quot;: &quot;b6e5e089-ba2b-4051-82b1-e1979356c4db&quot;
   }
-}]]></component>
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 5
 }</component>
