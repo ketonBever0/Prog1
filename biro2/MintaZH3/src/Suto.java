@@ -64,4 +64,24 @@ public abstract class Suto {
      */
     public abstract void koszossagNoveles();
 
+
+    /*
+    * Szükséges getterek és setterek
+    */
+
+    public int getKoszossag() {
+        return koszossag;
+    }
+
+    public void setKoszossag(int koszossag) {
+        this.koszossag = koszossag;
+    }
+
+    public int getHaviFogyasztas() {
+        return haviFogyasztas;
+    }
+
+    public void setHaviFogyasztas(int haviFogyasztas) {
+        this.haviFogyasztas = haviFogyasztas;
+    }
 }
