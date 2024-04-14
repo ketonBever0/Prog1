@@ -1,7 +1,7 @@
 public class MotorizedVehicle {
 
     private float fuelLevel;
-    private int maxFuelCapacity;
+    private final int maxFuelCapacity;
     private int tireCount;
     private int baseWeight;
 
@@ -12,14 +12,14 @@ public class MotorizedVehicle {
         this.baseWeight = weight;
     }
 
-    public float averageConsuption() {
+    public float averageConsumption() {
         return (float) (5 * Math.sqrt((double) this.baseWeight / 1302));
     }
 
     public boolean go(float km) {
 
-        float cons = km * this.averageConsuption();
-        if (this.fuelLevel * this.averageConsuption() < km * this.averageConsuption()) {
+        float cons = km * this.averageConsumption();
+        if (this.fuelLevel * this.averageConsumption() < km * this.averageConsumption()) {
             return false;
         } else {
             this.setFuelLevel(cons);
@@ -32,7 +32,7 @@ public class MotorizedVehicle {
     }
 
     public int range() {
-        return (int) Math.floor(this.fuelLevel / this.averageConsuption());
+        return (int) Math.floor(this.fuelLevel / this.averageConsumption());
     }
 
     public float getFuelLevel() {
