@@ -1,4 +1,5 @@
 import java.util.HashMap;
+import java.util.Iterator;
 import java.util.Map;
 import java.util.Objects;
 
@@ -29,9 +30,10 @@ public class BestPriceFinder {
 
     public int deleteShop(String shop) {
         int count = 0;
-        for (Map.Entry<String, String> bestBuy : bestBuys.entrySet()) {
-            if (Objects.equals(bestBuy.getValue(), shop)) {
-                bestBuys.remove(bestBuy.getKey());
+        Iterator<Map.Entry<String, String>> it = bestBuys.entrySet().iterator();
+        while (it.hasNext()) {
+            if (Objects.equals(it.next().getValue(), shop)) {
+                it.remove();
                 count++;
             }
         }

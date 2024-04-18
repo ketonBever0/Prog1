@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 
 public class ShoppingList {
@@ -35,9 +36,10 @@ public class ShoppingList {
 
     public int deleteUnimportant() {
         int count = 0;
-        for (Product item : items) {
-            if (!item.isImportant()) {
-                items.remove(item);
+        Iterator<Product> it = items.iterator();
+        while (it.hasNext()) {
+            if (!it.next().isImportant()) {
+                it.remove();
                 count++;
             }
         }
