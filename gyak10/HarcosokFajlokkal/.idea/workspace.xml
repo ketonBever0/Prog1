@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="54930893-cabb-479d-aa0b-93000ad72269" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../../biro2/hazi9/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../biro2/hazi9/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../biro2/hazi9/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../biro2/hazi9/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../biro2/hazi9/hazi9.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../biro2/hazi9/src/Jatek.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Allatok/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Allatok/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Allatok/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Allatok/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Allatok/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Allatok/Allatok.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Allatok/src/Allat.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Allatok/src/Balna.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Allatok/src/Capa.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Allatok/src/Csirke.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Allatok/src/CsordaLista.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Allatok/src/CsordaTomb.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Allatok/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Allatok/src/Medve.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Allatok/src/Novenyevo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Allatok/src/Oroszlan.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Allatok/src/Ragadozo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Allatok/src/SzarazfoldiAllat.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Allatok/src/Tehen.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Allatok/src/ViziAllat.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Harcosok/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Harcosok/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Harcosok/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Harcosok/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Harcosok/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Harcosok/Harcosok.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Harcosok/src/Harcos.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Harcosok/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HarcosokFajlokkal.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Harcos.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Kivetelkezeles/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Kivetelkezeles/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Kivetelkezeles/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Kivetelkezeles/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Kivetelkezeles/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Kivetelkezeles/Kivetelkezeles.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Kivetelkezeles/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Kivetelkezeles/src/ZeroDivisionException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gyak9/Allatok/src/Allat.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gyak9/Allatok/src/Balna.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gyak9/Allatok/src/Capa.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gyak9/Allatok/src/Csirke.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gyak9/Allatok/src/CsordaLista.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gyak9/Allatok/src/CsordaTomb.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gyak9/Allatok/src/Medve.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gyak9/Allatok/src/Novenyevo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gyak9/Allatok/src/Oroszlan.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gyak9/Allatok/src/Ragadozo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gyak9/Allatok/src/SzarazfoldiAllat.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gyak9/Allatok/src/Tehen.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gyak9/Allatok/src/ViziAllat.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../gyak9/Allatok/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../gyak9/Allatok/src/Main.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "ketonBever0"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/ketonBever0/Prog1.git",
+    "accountId": "b6e5e089-ba2b-4051-82b1-e1979356c4db"
+  }
+}]]></component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 5
+}]]></component>
+  <component name="ProjectId" id="2fStjf0nU1H5URi3zPKbp3djZhw" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="54930893-cabb-479d-aa0b-93000ad72269" name="Changes" comment="" />
+      <created>1713806447312</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1713806447312</updated>
+    </task>
+    <servers />
+  </component>
+</project>
