@@ -1,0 +1,3 @@
+Leonidas;300;299
+Patroklosz;150;40
+Achilles;320;500

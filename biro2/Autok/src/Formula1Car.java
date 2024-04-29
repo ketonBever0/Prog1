@@ -1,6 +1,6 @@
 public class Formula1Car extends RaceCar {
 
-    private String team;
+    private final String team;
     private int pilotSkillLevel;
 
 

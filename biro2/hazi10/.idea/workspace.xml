@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="d5668e44-005a-4684-8522-1047ecdf4100" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../../biro1/ZH4/src/Autoszallito.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../biro1/ZH4/src/Zh4.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Csapat.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Jatekos.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Liga.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Meccs.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gyak11/Harcosok/src/Harcos.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../gyak11/Harcosok/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Autok/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Autok/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Autok/src/Formula1Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Autok/src/Formula1Car.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Autok/src/MotorizedVehicle.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Autok/src/MotorizedVehicle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Autok/src/RaceCar.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Autok/src/RaceCar.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Autok/src/RaceTrack.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Autok/src/RaceTrack.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Autok/src/bead.zip" beforeDir="false" afterPath="$PROJECT_DIR$/../Autok/src/bead.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MintaZH4/src/Hallgato.java" beforeDir="false" afterPath="$PROJECT_DIR$/../MintaZH4/src/Hallgato.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "ketonBever0"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/ketonBever0/Prog1.git",
+    "accountId": "b6e5e089-ba2b-4051-82b1-e1979356c4db"
+  }
+}]]></component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 8
+}]]></component>
+  <component name="ProjectId" id="2fnEjaKQdVC0HPiS4JQeLAq8wnR" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d5668e44-005a-4684-8522-1047ecdf4100" name="Changes" comment="" />
+      <created>1714428579725</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1714428579725</updated>
+    </task>
+    <servers />
+  </component>
+</project>

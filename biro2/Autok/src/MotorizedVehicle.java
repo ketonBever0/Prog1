@@ -2,18 +2,19 @@ public class MotorizedVehicle {
 
     private float fuelLevel;
     private final int maxFuelCapacity;
-    private int tireCount;
-    private int baseWeight;
+    private final int tireCount;
+    private final int baseWeight;
 
 
     public MotorizedVehicle(int tireCount, int maxFuelCapacity, int weight) {
         this.maxFuelCapacity = maxFuelCapacity;
         this.tireCount = tireCount;
         this.baseWeight = weight;
+        this.fuelLevel = maxFuelCapacity;
     }
 
     public float averageConsumption() {
-        return (float) (5 * Math.sqrt((double) this.baseWeight / 1302));
+        return (float) (5 * Math.sqrt((double) this.baseWeight / 100));
     }
 
     public boolean go(float km) {
@@ -61,6 +62,6 @@ public class MotorizedVehicle {
 
     @Override
     public String toString() {
-        return String.format("Alapsuly: %d Kg, Kerekek szama: %d, Uzemanyag tartaj: %.1f/50", this.baseWeight, this.tireCount, this.fuelLevel);
+        return String.format("Alapsuly: %d Kg, Kerekek szama: %d, Uzemanyag tartaj: %.1f/50 l", this.baseWeight, this.tireCount, this.fuelLevel);
     }
 }

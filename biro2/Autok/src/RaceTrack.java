@@ -1,7 +1,7 @@
 public class RaceTrack {
 
-    private RaceCar[] cars;
-    private float length;
+    private final RaceCar[] cars;
+    private final float length;
 
 
     public RaceTrack(float length) {

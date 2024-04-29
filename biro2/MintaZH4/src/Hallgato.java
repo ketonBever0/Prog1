@@ -64,7 +64,11 @@ public class Hallgato implements Comparable<Hallgato> {
 
     public int legjobb () {
         if (this.teljesitesek.isEmpty()) return 0;
-        return this.teljesitesek.values().stream().mapToInt(Integer::intValue).max().getAsInt();
+        int max = 0;
+        for (Map.Entry<String, Integer> teljesites : teljesitesek.entrySet()) {
+            if (teljesites.getValue() > max) max = teljesites.getValue();
+        }
+        return max;
     }
 
 //    @Override
@@ -74,22 +78,9 @@ public class Hallgato implements Comparable<Hallgato> {
 
     @Override
     public int compareTo(Hallgato masik) {
-        OptionalInt teljesites = this.teljesitesek.values().stream().mapToInt(Integer::intValue).max();
-        OptionalInt masikTeljesites = masik.teljesitesek.values().stream().mapToInt(Integer::intValue).max();
-
-        if (teljesites.isPresent() && masikTeljesites.isPresent()) {
-            int teljesitesValue = teljesites.getAsInt();
-            int masikTeljesitesValue = masikTeljesites.getAsInt();
-
-            if (teljesitesValue != masikTeljesitesValue) {
-                return Integer.compare(masikTeljesitesValue, teljesitesValue);
-            } else {
-                return this.neptun.compareTo(masik.neptun);
-            }
-        } else {
-            return teljesites.isPresent() ? -1 : masikTeljesites.isPresent() ? 1 : 0;
-        }
-
+        if (this.legjobb() > masik.legjobb()) return -1;
+        else if (this.legjobb() < masik.legjobb()) return 1;
+        else return this.neptun.compareTo(masik.neptun);
     }
 
 }

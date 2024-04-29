@@ -2,8 +2,8 @@ public class RaceCar extends MotorizedVehicle {
 
     private float tirePercentage = 100;
     private int horsePower;
-    private int baseHorsePower;
-    private int topSpeed;
+    private final int baseHorsePower;
+    private final int topSpeed;
 
 
     public RaceCar(int tankMaxCapacity, int weight, int horsePower, int topSpeed) {
@@ -37,7 +37,7 @@ public class RaceCar extends MotorizedVehicle {
     }
 
     public void changeTire() {
-        if (this.tirePercentage <= 20) this.tirePercentage = 100;
+        if (this.tirePercentage < 20) this.tirePercentage = 100;
     }
 
     public void tune() {
