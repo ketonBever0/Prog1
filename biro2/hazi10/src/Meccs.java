@@ -17,7 +17,17 @@ public class Meccs {
         return masodikCsapat;
     }
 
-    public Csapat gyoztes () {
-
+    public Csapat gyoztes() {
+        if (elsoCsapat.atlag("magassag") > masodikCsapat.atlag("magassag")) {
+            return elsoCsapat;
+        } else if ((elsoCsapat.atlag("magassag") < masodikCsapat.atlag("magassag"))) {
+            return masodikCsapat;
+        } else {
+            if (elsoCsapat.atlag("suly") < masodikCsapat.atlag("suly")) {
+                return elsoCsapat;
+            } else if (elsoCsapat.atlag("suly") > masodikCsapat.atlag("suly")) {
+                return masodikCsapat;
+            } else return elsoCsapat;
+        }
     }
 }

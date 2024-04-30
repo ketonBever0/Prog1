@@ -22,19 +22,19 @@ public class Liga {
         return meccsek;
     }
 
-    public List<Csapat> hianyosCsapatok () {
-
+    public List<Csapat> hianyosCsapatok() {
+        return null;
     }
 
-    public int csapatokKizarasa () {
-
+    public int csapatokKizarasa() {
+        return 0;
     }
 
-    public Csapat jatek () {
-
+    public Csapat jatek() {
+        return null;
     }
 
-    public void eredmenyTabla () {
+    public void eredmenyTabla() {
 
     }
 }
