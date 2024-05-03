@@ -33,9 +33,10 @@ public class Main {
 
         String[] fajlbolJott = new String[0];
         try {
-            fajlbolJott = fajlbolOlvas("harcosokbe.txt");
-        } catch (IOException ignored) {
-            System.err.println("Fájl nem található!");
+            fajlbolJott = fajlbolOlvas("src/harcosokbe.txt");
+        } catch (IOException e) {
+//            System.err.println("Fájl nem található!");
+
             return;
         }
 
@@ -46,8 +47,8 @@ public class Main {
             if (db.length != 3) continue;
 
             String ujnev = db[0];
-            double ujero = Double.parseDouble(db[0]);
-            int ujszint = Integer.parseInt(db[0]);
+            double ujero = Double.parseDouble(db[1]);
+            int ujszint = Integer.parseInt(db[2]);
             Harcos ujHarcos = new Harcos(ujnev, ujero, ujszint);
             harcosok.add(ujHarcos);
         }
@@ -76,7 +77,7 @@ public class Main {
         System.out.println("A csata győztese " + gyoztes.getNev() + "!");
 
         try {
-            fajlbaIr("csataeredmeny.txt", "A csata győztese: " + gyoztes.getNev() + "!", true);
+            fajlbaIr("src/csataeredmeny.txt", "A csata győztese: " + gyoztes.getNev() + "!\n", true);
         } catch (IOException ignored) {
             System.err.println("A fájl nem hozható létre!");
         }

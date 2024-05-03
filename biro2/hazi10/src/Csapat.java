@@ -5,7 +5,7 @@ public class Csapat {
 
     private String neve;
     private Map<String, List<Jatekos>> jatekosok;
-    private String poziciok;
+    private static String poziciok = "Starting Pitcher, First Baseman, Shortstop, Third Baseman, Designated Hitter, Catcher, Second Baseman, Relief Pitcher, Outfielder";
 
 
     public Csapat(String neve) {
@@ -51,12 +51,13 @@ public class Csapat {
 
     public List<String> hianyzoPoziciok() {
 
-        String[] osszes = new String[]{"Starting Pitcher", "First Baseman", "Shortstop", "Third Baseman", "Designated Hitter", "Catcher", "Second Baseman", "Relief Pitcher", "Outfielder"};
         List<String> kell = new ArrayList<>();
+        String[] osszes = poziciok.split(", ");
         for (String pozicio : osszes) {
             for (Map.Entry<String, List<Jatekos>> ez : this.jatekosok.entrySet()) {
-                if (pozicio.equals(ez.getKey()) && !ez.getValue().isEmpty()) break;
-                else kell.add(ez.getKey());
+                if (pozicio.equals(ez.getKey())) {
+                    if (ez.getValue().isEmpty()) kell.add(ez.getKey());
+                }
             }
         }
         return kell;
