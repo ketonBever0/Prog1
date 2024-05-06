@@ -18,10 +18,8 @@ public class Liga {
         File[] dir = dr.listFiles();
         if (dir != null) {
             for (File child : dir) {
-                String fn = child.getName();
-                if (fn.endsWith(".csv")) {
-                    int pos = fn.indexOf(".csv");
-                    csapatok.add(new Csapat(fn.substring(0, pos)));
+                if (child.getName().endsWith(".csv")) {
+                    csapatok.add(new Csapat(child.getName().substring(0, child.getName().indexOf(".csv"))));
                 }
             }
         }
@@ -53,9 +51,11 @@ public class Liga {
 
     public int csapatokKizarasa() {
         int kizartakSzama = 0;
+
         Iterator<Csapat> it = csapatok.iterator();
         while (it.hasNext()) {
-            it.remove();
+            Csapat csapat = it.next();
+            if (!csapat.hianyzoPoziciok().isEmpty()) it.remove();
             kizartakSzama++;
         }
         return kizartakSzama;
@@ -63,6 +63,7 @@ public class Liga {
 
     public Csapat jatek() {
 
+        List<Csapat> gyoztesek = new ArrayList<>();
         while (csapatok.size() > 1) {
             for (int i = 0; i < csapatok.size(); i += 2) {
                 if (i < csapatok.size() - 1) {
@@ -70,11 +71,13 @@ public class Liga {
                 }
             }
 
-            List<Csapat> ujCsapatok = new ArrayList<>();
+
             for (Meccs meccs : meccsek) {
-                ujCsapatok.add(ujCsapatok.size() - 1, meccs.gyoztes());
+                gyoztesek.add(meccs.gyoztes());
             }
-            csapatok = ujCsapatok;
+
+
+
         }
 
 
@@ -99,7 +102,7 @@ public class Liga {
                 List<Csapat> ujCsapatok = new ArrayList<>();
                 for (Meccs meccs : meccsek) {
                     Csapat gyoztes = meccs.gyoztes();
-                    ujCsapatok.add(ujCsapatok.size() - 1, gyoztes);
+                    ujCsapatok.add(gyoztes);
                     bw.write(gyoztes.getNeve() + "\n");
                 }
                 csapatok = ujCsapatok;
