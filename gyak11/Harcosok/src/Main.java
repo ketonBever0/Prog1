@@ -67,13 +67,13 @@ public class Main {
 //            }
 //        }
 
-        Set<Harcos> csatater = new TreeSet<>();
-        csatater.addAll(harcosok);
+        Set<Harcos> csatater = new TreeSet<>(harcosok);
         Harcos gyoztes = null;
         for (Harcos kihivo : csatater) {
             gyoztes = kihivo;
             break;
         }
+        assert gyoztes != null;
         System.out.println("A csata győztese " + gyoztes.getNev() + "!");
 
         try {
